@@ -1,0 +1,276 @@
+/***
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ * contenteditable attribute is included anywhere else in the document.
+ * Otherwise it causes space to appear at the top and bottom of elements
+ * that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ * `:before` to contain the top-margins of child elements.
+  /*/
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; 
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	/*color:#838994;*/
+	letter-spacing: 0.03em;
+	/*background-color: LightGray;*/
+}
+/*div{
+	border: 1px solid Chocolate;
+}*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles*/
+
+h1,h2,h3,h4,h5{
+	font-family:'Roboto', sans-serif;
+	/*font-size:32px, 24px, 16px, 8px;*/
+}
+/*Navigation Section*/
+.content-wrapper{
+	width:60%;
+	padding:10px auto;
+	margin:0 auto;
+}
+.top-navigation{
+	text-align: right;
+	color: black;
+	margin:0 auto;
+	/*border-bottom:1px solid;
+	border-color:#C8C8C8;*/
+	/*position:fixed;
+	width:100%;
+	z-index:9999;*/
+}
+.top-navigation img{
+	float: left;
+	margin-top:15px;
+}
+.top-navigation .links{
+	list-style: none;
+	display: inline-block;
+	color:#838994;
+	-webkit-font-smoothing: antialiased;
+}
+.header-links{
+	float:right;
+}
+.header-links >li{
+	float: left;
+	display: inline-block;
+	margin: 1.5em 1em;
+}
+.header-links a{
+	color:#838994;
+	text-decoration:none;
+}
+.header-links a:hover{
+	color:#4c5058;
+	text-decoration:none;
+}
+/*.header-links .a >.active{
+	color:##4c5058;
+	font-weight:600;
+}*/
+/*.top-navigation .links .active{
+	color: #4c5058;
+	font-weight: 500;
+}
+.top-navigation .links li:hover{
+	cursor: pointer;
+	color:#333333;
+}*/
+/*header{
+	padding-top: 10px;
+}*/
+/* Background Image Section*/
+.image-section > .content{
+	background-image: url("../images/first-background copy.jpg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:45.938rem;
+	padding:260px 0;
+	text-align:center;
+}
+.heading {
+	color:#FFFFFF;
+	font-size:3em;
+	text-align:center;
+	padding:20px 0;
+}
+.intro {
+	color:#FFFFFF;
+	font-size:1.5em;
+	text-align:center;
+}
+button{
+	color:#FFFFFF;
+	padding: 15px 35px;
+	background:#D55135;
+	text-align: center;
+	text-shadow:none;
+	border-style:none;
+	margin: 20px auto 0;
+	font-size:1.15em;
+	border-radius: 6px;
+}
+/* Karma Section */
+/*.karma-section{
+	height:22em;
+}*/
+.content-describe{
+	width:60%;
+	margin:9em auto;
+	padding-bottom:250px;
+	text-align: center;
+
+}
+aside{
+	float:left;
+	/*margin:0 1.5%;*/
+	padding:2em 2em 8em 2em;
+	/*border-bottom:thin solid;
+	border-color:#C8C8C8;*/
+	
+}
+.logo img{
+	width: 130px;
+	height: auto;
+	padding: 10px 5px;
+}
+h2{
+	font-size:2.2em;
+	color:#000000;
+	letter-spacing:0.025em;
+}
+h4{
+	font-size:1.3em;
+	color:#000000;
+}
+h5{
+	font-size:1em;
+	color:#000000;
+	padding-top:10px;
+}
+/*div.content-describe >img{
+	position: relative;
+	display: inline-block;
+	float:left;
+}*/
+/* Footer section*/
+.social{
+	text-align: center;
+	width:60%;
+	margin:1.5em auto;
+
+}
+.footer-links{
+	list-style:none;
+	display:inline-block;
+}
+.footer-links >li{
+  float:left;
+  display:inline-block;
+  margin:1em;
+  padding:0.7em;
+  border:1px solid;
+  border-radius:100%;
+  border-color:#C8C8C8;
+  }
+
+  /*Color the icons*/
+
+ .footer-links li:first-child{
+ 	color:#5A9CE1;
+ }
+ .footer-links li:nth-child(2){
+ 	color:#40558E;
+ }
+ .footer-links li:last-child{
+ 	color:#3B5F85;
+ }
+ i{
+  text-decoration:none;
+}
+i:hover{
+  color:#FFFFFF;
+  text-decoration:underline;
+}
+/*footer{
+	padding-top:1em;
+}*/
+.social >p{
+	color:#C8C8C8;
+	font-size:.90em;
+
+}

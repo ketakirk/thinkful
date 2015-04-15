@@ -1,0 +1,37 @@
+Describe yourself in two or three sentences.
+
+What's important to you
+I believe learning is a continuous and life-long process. Learning and growing is important to me. 
+
+Where are you from
+Originally from Pune in India, I have made Bay area my home since the last 7 years.
+
+What are your favorite hobbies
+In my spare time I enjoying traveling and hiking.
+
+What's your dream job
+
+5 large visual sections: 
+1) a big header with a background image and headline, 
+2) the "Introduction Section", 
+3) the "Where I'm From" section, 
+4) the "About Me" section, and 
+5) a footer with several links. 
+<h1>Introduction</h1>
+  <p>I am an instructional designer and eLearning developer. I have over four years of hands-on experience in online course design, development, and evaluation.</p>
+  <p>I am currently working with SAP's iContent team as a Consultant. </p>
+</section>
+<section>
+  <h1>Where I'm From </h1>
+  <p>Originally from Pune in India, I have made Bay area my home since the last 6 years.
+</p>
+</section>
+<section>
+  <h1>More About me</h1>
+  <p class= "question">What are your favorite hobbies?</p>
+  <p class= "answer">In my spare time I enjoying <b>traveling</b>, hiking and cooking as well as trying different cuisines.</p>
+  <p class= "question">What is your background?</p>
+  <p class= "answer">I am passionate about <b>online education </b>and enjoy creating simple and effective online learning experiences for adults.</p>
+  <p class= "question">What is your dream job?</p>
+  <p class= "answer">I would love to have my own educational consulting firm in the future!</p>
+</section>
