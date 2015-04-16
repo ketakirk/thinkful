@@ -1,7 +1,7 @@
 /***
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
- * contenteditable attribute is included anywhere else in the document.
+ * content editable attribute is included anywhere else in the document.
  * Otherwise it causes space to appear at the top and bottom of elements
  * that are clearfixed.
  * 2. The use of `table` rather than `block` is only necessary if using
@@ -91,6 +91,9 @@ table {
 
 /* Custom Styles*/
 
+html{
+	-webkit-font-smoothing: antialiased;
+}
 h1,h2,h3,h4,h5{
 	font-family:'Roboto', sans-serif;
 	/*font-size:32px, 24px, 16px, 8px;*/
@@ -105,8 +108,6 @@ h1,h2,h3,h4,h5{
 	text-align: right;
 	color: black;
 	margin:0 auto;
-	/*border-bottom:1px solid;
-	border-color:#C8C8C8;*/
 	/*position:fixed;
 	width:100%;
 	z-index:9999;*/
@@ -137,21 +138,15 @@ h1,h2,h3,h4,h5{
 	color:#4c5058;
 	text-decoration:none;
 }
-/*.header-links .a >.active{
-	color:##4c5058;
+.header-links .active{
+	color:#3D4046;
 	font-weight:600;
-}*/
-/*.top-navigation .links .active{
-	color: #4c5058;
-	font-weight: 500;
 }
-.top-navigation .links li:hover{
-	cursor: pointer;
-	color:#333333;
-}*/
-/*header{
-	padding-top: 10px;
-}*/
+
+hr {
+	margin-bottom:-1px;
+	margin-top:0px;
+}
 /* Background Image Section*/
 .image-section > .content{
 	background-image: url("../images/first-background copy.jpg");
@@ -204,7 +199,7 @@ aside{
 	
 }
 .logo img{
-	width: 130px;
+	width:130px;
 	height: auto;
 	padding: 10px 5px;
 }
@@ -220,7 +215,7 @@ h4{
 h5{
 	font-size:1em;
 	color:#000000;
-	padding-top:10px;
+	padding-top:20px;
 }
 /*div.content-describe >img{
 	position: relative;
