@@ -108,9 +108,9 @@ h1,h2,h3,h4,h5{
 	text-align: right;
 	color: black;
 	margin:0 auto;
-	/*position:fixed;
+	position:fixed;
 	width:100%;
-	z-index:9999;*/
+	background-color:#FFFFFF;
 }
 .top-navigation img{
 	float: left;
@@ -146,12 +146,15 @@ h1,h2,h3,h4,h5{
 hr {
 	margin-bottom:-1px;
 	margin-top:0px;
+/*	border-color:#C8C8C8;*/
 }
+
 /* Background Image Section*/
 .image-section > .content{
-	background-image: url("../images/first-background copy.jpg");
+	background: url("../images/first-background copy.jpg") no-repeat center bottom;
+	/*background-image: url("../images/first-background copy.jpg");
 	background-position: center bottom;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	background-size: cover;
 	height:45.938rem;
 	padding:260px 0;
