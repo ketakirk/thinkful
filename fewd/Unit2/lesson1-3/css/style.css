@@ -1,0 +1,19 @@
+#wrapper {
+  width:40em;
+  background-color:386AA7;
+  color:F2FFF8;
+  font-family:sans-serif;
+  padding:20px;
+}
+.highlighted{
+  background-color:C44749;
+}
+h1{
+	font-size:3em;
+	text-align:center;
+}
+p{
+	text-align:justify;
+	padding:15px 15px;
+	background-color:5678EC;
+}
