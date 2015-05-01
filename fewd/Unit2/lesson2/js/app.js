@@ -39,14 +39,14 @@ $(document).ready(function() {
 		}
 	})
 	//Release the x key to go back to the still pose
-	// .keyup(function(e) {
-	// 	if (e.keyCode == 88) {
-	// 		$('.ryu-cool').hide();
-	// 		// $('.ryu-still').show();
-	// 		$('.ryu-ready').show();
-	// 	}
+	.keyup(function(e) {
+		if (e.keyCode == 88) {
+			$('.ryu-cool').hide();
+			$('.ryu-still').show();
+			$('.ryu-ready').show();
+		}
 	});
-
+});
 function playHadouken() {
 	$('#hadouken-sound') [0].volume = 0.5;
 	$('#hadouken-sound') [0].load();
